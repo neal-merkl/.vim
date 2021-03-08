@@ -93,26 +93,10 @@ eval $(thefuck --alias)
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 
 export NVM_DIR=~/.nvm
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/
-export GOPATH="$HOME/go:$HOME/workspace/bundled-payments/chaincodes"
-# export GOPATH="$HOME/go:$HOME/workspace/owner-mediated-records/chaincodes"
-export PATH=$PATH:$HOME/workspace/fabric/fabric-samples/bin:/usr/local/opt/helm@2/bin
-export BX_APIKEY=FnI3djB_Sb3A4YL89y9-RlR1xfB3_gCtqQRpp8eCMkbc
-export CDT_APIKEY=_q59SwZlT-1zJfhZv8wooXnhTR_YJUbunFkyTqgdjbtr
-export HUN_APIKEY=1OCW-bgygU80-f4PZODFlHa5uwcCw_Ob8XkjZYr2cFSC
-export GITLAB_TOKEN=sVVg-5aP7pX4tiNZxtRh
-export GITHUB_TOKEN=9c1a54a9a31b19bdad4ad145dc424fe7a387d075
-# export CLOUDANT_USERNAME=11bc4102-8a3a-4d60-88ae-43f07c62d509-bluemix
-# export CLOUDANT_PASSWORD=105102a7be625c5481e9b3f3ffbb675e911bc7e736753f565624bed197323a0f
-# export CLOUDANT_DATABASE=test-offchain1
-# export CLOUDANT_HOST="https://11bc4102-8a3a-4d60-88ae-43f07c62d509-bluemix.cloudantnosqldb.appdomain.cloud"
 
 alias vzsh="vim ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias work="cd ~/workspace"
-alias bxlogin="bx login --apikey $BX_APIKEY"
-alias cdtlogin="bx login --apikey $CDT_APIKEY"
-alias hunlogin="bx login --apikey $HUN_APIKEY"
 alias size="du -sh"
 alias dps="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.Status}}'"
 alias dimgs="docker images --format 'table {{.ID}}\t{{.Repository}}:{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}'"
@@ -130,5 +114,3 @@ if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 source ~/.nvm/nvm.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-echo "Hi Neal 👀 Hope you're having a wonderful day 🌞"
